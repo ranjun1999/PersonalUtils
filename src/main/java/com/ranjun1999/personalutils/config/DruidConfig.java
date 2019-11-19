@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 /**
- *
  * 配置druid需要的配置类，引入application.yml件中以spring.datasource开头的信息
  * 因此需要在application.properties文件中配置相关信息。
  *
@@ -19,7 +18,7 @@ public class DruidConfig {
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
-    public DataSource druidDataSource(){
+    public DataSource druidDataSource() {
         DruidDataSource druidDataSource = new DruidDataSource();
         return druidDataSource;
     }
