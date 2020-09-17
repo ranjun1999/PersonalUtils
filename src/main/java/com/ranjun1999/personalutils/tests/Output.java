@@ -16,4 +16,10 @@ public interface Output {
     }
 
 }
+interface Inout{
 
+}
+
+interface Tes extends Output,Inout{
+
+}
